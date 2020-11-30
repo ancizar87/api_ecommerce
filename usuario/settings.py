@@ -116,16 +116,12 @@ WSGI_APPLICATION = 'usuario.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'usuario',
-        'USER': 'root',
-        'PASSWORD': '',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'registro',
+        'USER': 'postgres',
+        'PASSWORD': 'Fenix8724',
         'HOST': 'localhost',
-        'PORT': '3306',
-        'STORAGE_ENGINE': 'MyISAM / INNODB / ETC',
-        'OPTIONS':{
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        }
+        'PORT': '5432',
     }
 }
 
