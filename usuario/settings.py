@@ -48,21 +48,11 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'recuperarpass',
-    'loginsocial',
-    'banner',
-    'caractproducto',
+    
     'formcontact',
-    'orders',
-    'shoppingcar',
-    'galleryProducts',
-    'galleryServices',
-    'productos',
-    'ramas',
-    'servicios',
-    'unidadMedida',
+    
     'categoriasblog',
     'blog',
-    'terminosCondiciones',
     'ckeditor',
     'dastosUsuario',
 ]
