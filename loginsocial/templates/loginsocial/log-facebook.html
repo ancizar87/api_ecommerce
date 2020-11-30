@@ -1,0 +1,15 @@
+{% load socialaccount %} 
+{% providers_media_js %}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Login</title>
+</head>
+
+<body>
+    <button><a href="{% provider_login_url "facebook" method="oauth2" %}">Facebook login</a></button>
+</body>
+
+</html>

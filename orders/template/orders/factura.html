@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-size: .7rem !important;
+            font-family: Roboto, 'Segoe UI', Tahoma, sans-serif !important;
+            max-width: 790px;
+            min-width: 790px;
+            margin: 0 auto;
+            display: block;
+            line-height: 12px;
+            padding: 37.80px !important;
+            box-sizing: border-box !important;
+            height: 1056px !important;
+            position: relative;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0 0 !important
+        }
+        
+        p {
+            margin: 0 0 !important
+        }
+        
+        table {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th width="190px" align="left">
+                    <img src="./lightcon.png" alt="lightcon" width="100px">
+                </th>
+
+                <th width="300px">
+                    <h2 style="color: blue;font-weight: 700;">LIGHTCON INGENIERIA</h2>
+
+                    <sub style="font-size: .8rem !important;color:rgb(116, 116, 116)">Nit 900365003</sub>
+                </th>
+
+                <th>
+                    <img src="./conecta-logo.png" alt="conectaconingenieria.com" width="100px">
+                </th>
+
+                <th>
+                    <h4>
+                        <b>Factura de Venta</b>
+                    </h4>
+
+                    <b style="color:#f00">{{invoice}}</b>
+                </th>
+            </tr>
+        </thead>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p>
+                    Calle 129 A No 45-48 PRADO VERANIEGO
+
+                    <br> Telefonos 7745082 7529978 CEL 3229688004 3207236469
+                </p>
+            </td>
+
+            <td></td>
+            <td></td>
+
+            <td align="center">
+                <p style="text-align: center">
+                    IVA REGIMEN COMUN
+
+                    <br> Habilitacion facturación DIAN No 18763000000923
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table style="border:1px solid #ccc;padding:4px;box-sizing: border-box;border-radius: 6px">
+        <thead>
+            <tr>
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">INFORMACIÓN DEL CLIENTE</h2>
+                </th>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">FECHA</h2>
+                </th>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">DIRECCIÓN</h2>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="padding:4px">
+                    <h2 style="margin:5px 0 !important">ZX VENTURES COLOMBIA S.A.S</h2>
+
+                    <h4 style="margin:5px 0 !important">
+                        <b>CC. No.:</b> 83506587-7
+                    </h4>
+
+                    <h4 style="margin:5px 0 !important">
+                        <b>TELÉFONO</b> 890 6840
+                    </h4>
+                </td>
+
+                <td align="center" style="padding:4px">
+                    <h3>{{fecha}}</h3>
+                </td>
+
+                <td align="center">
+                    <h3>KRA 53 A # 127 - 35</h3>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border:1px solid #ccc;padding:4px;box-sizing: border-box;border-radius: 6px;margin:5px 0">
+        <thead>
+            <tr>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">DESCRIPCIÓN</h2>
+                </th>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">CANTIDAD</h2>
+                </th>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">VALOR UNIT.</h2>
+                </th>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">VALOR TOTAL</h2>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="padding:4px">3000</td>
+
+                <td align="center" style="padding:4px">
+                    {{producto}}
+                </td>
+
+                <td align="center">{{cantidad}}</td>
+
+                <td align="center">$ {{precio}}</td>
+
+                <td align="center">$ {{precio_total}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border:1px solid #ccc;padding:4px;box-sizing: border-box;border-radius: 6px;margin:5px 0">
+        <thead>
+            <tr>
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">LIQUIDACION</h2>
+                </th>
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">VALOR BASE</h2>
+                </th>
+
+                <!--<th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">%</h2>
+                </th>-->
+
+                <th style="padding:2px !important;background-color: #99cc00;">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">VALOR</h2>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="padding:4px">VALOR PARCIAL:</td>
+
+                <td colspan="2" align="center" style="padding:4px">
+                </td>
+                <td align="right">$ {{precio_total}}</td>
+            </tr>
+            <tr>
+                <td style="padding:4px">IVA Liquidado</td>
+                <td align="center">$ 1.366.600</td>
+
+                <!--<td align="center" style="padding:4px">
+                    19.00%
+                </td>-->
+                <td align="right">$ {{precio_total}}</td>
+            </tr>
+            <tr>
+                <td style="padding:4px">VALOR TOTAL:</td>
+
+                <td colspan="2" style="padding:4px">
+                </td>
+                <td align="right">{{precio_total}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="border:1px solid #ccc;padding:4px;box-sizing: border-box;border-radius: 6px;margin:5px 0">
+        <thead>
+            <tr>
+                <th style="padding:2px !important;border:1px solid #ccc">
+                    <h2 style="font-size: .7rem;font-weight: bolder;">OBSERVACIONES</h2>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="padding:40px"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer" style="padding:37.80px">
+        <article style="font-size:.6rem !important">
+            El comprador manifiesta que: 1. La presente FACTURA DE VENTA se asimila en todos sus efectos a una LETRA DE CAMBIO, según los artículos 621 y ss, 772, 773, 774 y ss, del Código de Comercio. 2. En caso de registrar mora en el pago de esta obligación, se
+            causarán interese según la máxima tasa de interés vigente en el mercado. 3. La firma o nombre de una persona distinta al comprador en este documento, implica que dicha persona está plenamente autorizada por el comprador, para recibir y revisar
+            los artículos relacionados, así como confirmar y confesar la deuda y obliga al comprador a efectuar su pago total. 4. En caso de mora, el comprador autoriza a LIGHTCON INGENIERIA SAS para que reporte este documento ante las centrales de riesgo,
+            bases de datos y entidades analistas de crédito. Al firmar este documento el comprador o su representante declara recibir de conformidad los artículos relacionados y acepta pagar totalmente el valor estipulado en este documento
+        </article>
+        <br/><br/><br/>
+        <div style="width: 100%;display: inline-block; clear: both; float:none;">
+            <div style="float: right;border:1px solid #ccc;border-radius: 8px;width: 250px;padding:5px 10px">
+                <b>FIRMA Y SELLO</b>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <hr>
+                <h4>C.C. O NIT</h4>
+            </div>
+        </div>
+        <div style="float: none;clear: both;widows: 100%;margin:20px auto 0" align="center">
+            www.conectaconingenieria.com
+        </div>
+    </div>
+</body>
