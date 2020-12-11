@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'ramas',
     'unidadMedida',
     'formcontact',
-    'galleryProducts',
     'banner',
     'categoriasblog',
     'blog',
