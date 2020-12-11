@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'recuperarpass',
     'ramas',
+    'unidadMedida',
     'formcontact',
     'productos',
     'caractproducto',
