@@ -51,8 +51,6 @@ INSTALLED_APPS = [
     'ramas',
     'unidadMedida',
     'formcontact',
-    'productos',
-    'caractproducto',
     'galleryProducts',
     'banner',
     'categoriasblog',
@@ -116,6 +114,10 @@ DATABASES = {
         'PASSWORD': 'Fenix8724',
         'HOST': 'localhost',
         'PORT': '5432',
+        'STORAGE_ENGINE': 'MyISAM / INNODB / ETC',
+        'OPTIONS':{
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
 
