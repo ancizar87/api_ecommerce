@@ -20,6 +20,9 @@ urlpatterns = [
     path('recuperarpass/', include('recuperarpass.urls')),
     path('formcontact/',include('formcontact.urls')),
     path('ramas/', include('ramas.urls')),
+    path('banner/',include('banner.urls')),
+    path('productos/',include('productos.urls')),
+    path('caractproducto/',include('caractproducto.urls')),
     path('blog/',include('blog.urls')),
     path('categoriasblog/',include('categoriasblog.urls')),
 ]
