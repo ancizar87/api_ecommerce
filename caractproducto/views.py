@@ -11,7 +11,6 @@ from rest_framework import status
 from rest_framework.permissions import AllowAny
 from rest_framework import generics
 from rest_framework.generics import  RetrieveUpdateAPIView
-#from orders.models import Order as OrderModel
 
 
 # Create your views here.
