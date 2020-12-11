@@ -50,7 +50,10 @@ INSTALLED_APPS = [
     'recuperarpass',
     'ramas',
     'formcontact',
-    
+    'productos',
+    'caractproducto',
+    'galleryProducts',
+    'banner',
     'categoriasblog',
     'blog',
     'ckeditor',
