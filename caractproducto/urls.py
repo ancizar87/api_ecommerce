@@ -1,6 +1,6 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
-from caractproducto.views import *
+from caractproducto.views import  CaracteristicaListView, Caracteristica_view, CaracteristicaPromo, Caracteristica, FiltroRetrieveUpdateAPIView
 
 
 urlpatterns = [
