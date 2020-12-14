@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'recuperarpass',
     'productos',
     #'caractproducto',
-    'galleryProducts',
+    #'galleryProducts',
     'ramas',
     'unidadMedida',
     'formcontact',
