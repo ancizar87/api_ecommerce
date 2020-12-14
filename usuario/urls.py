@@ -19,7 +19,7 @@ urlpatterns = [
     path('registro/', TemplateView.as_view(template_name='loginsocial/log-facebook.html')),
     path('recuperarpass/', include('recuperarpass.urls')),
     path('formcontact/',include('formcontact.urls')),
-    path('productos/',include('productos.urls')),
+    #path('productos/',include('productos.urls')),
     #path('caractproducto/',include('caractproducto.urls')),
     path('ramas/', include('ramas.urls')),
     path('banner/',include('banner.urls')),
