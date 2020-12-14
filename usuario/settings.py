@@ -49,9 +49,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'recuperarpass',
-    #'productos',
-    #'caractproducto',
-    #'galleryProducts',
+    'productos',
+    'caractproducto',
+    'galleryProducts',
     'ramas',
     'unidadMedida',
     'formcontact',
@@ -117,10 +117,10 @@ from decouple import config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'registro',
-        'USER': 'postgres',
-        'PASSWORD': 'Fenix8724',
-        'HOST': 'localhost',
+        'NAME': 'd22mpv5e0tkvhf',
+        'USER': 'ljdjlqqdklfziw',
+        'PASSWORD': '58c03d2f1d2e09b1e164b136849414f3670d46863c0a4c527fe8f5e2c282fa94',
+        'HOST': 'ec2-54-211-238-131.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
