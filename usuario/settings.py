@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'recuperarpass',
     'productos',
-    'caractproducto',
+    #'caractproducto',
     'galleryProducts',
     'ramas',
     'unidadMedida',
