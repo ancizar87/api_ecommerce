@@ -1,5 +1,5 @@
 from django.urls import path
-from productos.views import ProductoListView, PaginadorListView, produclastListView, ProductofilterListView, Productofilter, producpromocionlastListView
+from productos.views import *
 
 urlpatterns = [
     path('',ProductoListView.as_view()),
