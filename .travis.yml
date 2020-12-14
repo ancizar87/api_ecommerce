@@ -2,7 +2,7 @@ language: python
 python:
   - "3.8"
 env:
-    -PATH=/Users/aiori/AppData/Local/Programs/Python/Python38/python.exe -m venv env
+    -PATH=\Users\aiori\AppData\Local\Programs\Python\Python38\python.exe -m venv env
 services:
   -postgresql
 install:
