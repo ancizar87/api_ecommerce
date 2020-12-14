@@ -81,7 +81,8 @@ CORS_ORIGIN_WHITELIST = (
   'http://127.0.0.1:8100',
   'http://192.168.1.3:8000',
   'http://192.168.1.6:4200',
-  'http://localhost:4200'
+  'http://localhost:4200',
+  'http://192.168.1.6:8000',
 )
 
 ROOT_URLCONF = 'usuario.urls'
