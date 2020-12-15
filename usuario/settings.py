@@ -114,27 +114,27 @@ WSGI_APPLICATION = 'usuario.wsgi.application'
 import dj_database_url
 from decouple import config
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'registro',
-        'USER': 'postgres',
-        'PASSWORD': 'Fenix8724',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
 #DATABASES = {
  #   'default': {
   #      'ENGINE': 'django.db.backends.postgresql',
-   #     'NAME': 'd22mpv5e0tkvhf',
-    #    'USER': 'ljdjlqqdklfziw',
-     #   'PASSWORD': '58c03d2f1d2e09b1e164b136849414f3670d46863c0a4c527fe8f5e2c282fa94',
-      #  'HOST': 'ec2-54-211-238-131.compute-1.amazonaws.com',
+   #     'NAME': 'registro',
+    #    'USER': 'postgres',
+     #   'PASSWORD': 'Fenix8724',
+      #  'HOST': 'localhost',
        # 'PORT': '5432',
     #}
 #}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd22mpv5e0tkvhf',
+        'USER': 'ljdjlqqdklfziw',
+        'PASSWORD': '58c03d2f1d2e09b1e164b136849414f3670d46863c0a4c527fe8f5e2c282fa94',
+        'HOST': 'ec2-54-211-238-131.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
