@@ -7,6 +7,6 @@ from .views import views
 class TestViews(SimpleTestCase):
     def setUp(self):
         
-    def test_get_ok(self):
-        response = self.client.get('/')
-        self.assertEqual(response.status_code, 200)
+        def test_get_ok(self):
+            response = self.client.get('/')
+            self.assertEqual(response.status_code, 200)
