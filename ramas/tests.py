@@ -8,5 +8,5 @@ class TestViews(SimpleTestCase):
     def setUp(self):
         
         def test_get_ok(self):
-            response = self.client.get('/')
+            response = self.client.get('name')
             self.assertEqual(response.status_code, 200)
