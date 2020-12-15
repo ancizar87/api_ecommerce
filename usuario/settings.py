@@ -114,16 +114,7 @@ WSGI_APPLICATION = 'usuario.wsgi.application'
 import dj_database_url
 from decouple import config
 
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.postgresql',
-   #     'NAME': 'registro',
-    #    'USER': 'postgres',
-     #   'PASSWORD': 'Fenix8724',
-      #  'HOST': 'localhost',
-       # 'PORT': '5432',
-    #}
-#}
+
 
 DATABASES = {
     'default': {
