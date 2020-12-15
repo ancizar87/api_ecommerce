@@ -1,11 +1,12 @@
-from django.test import TestCase
-from ramas.models import Ramal
+from unittest.case import expectedFailure
+from django.test import SimpleTestCase
+from .views import views
 
 # Create your tests here.
 
-class RamalTestCase(TestCase):
+class TestViews(SimpleTestCase):
     def setUp(self):
-        Ramal.objects.create(nombre="Seguridad")
-        Ramal.objects.create(nombre="Almacenamiento")
-        Ramal.objects.create(nombre="Iluminacion")
         
+    def test_get_ok(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
